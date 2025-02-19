@@ -25,7 +25,7 @@ def main():
    running = True
    while running:
       running = handle_events()
-      screen.fill(config.BLACK) # Use color from config
+      screen.fill(config.GREEN) # Use color from config
       
       thickness = 2
 
@@ -38,7 +38,7 @@ def main():
       y_offset = 0 
       while y_offset < 800:
          pygame.draw.line(screen,config.BLUE,[1, 0 + y_offset],[799, 6 + y_offset],thickness)
-         y_offset = y_offset + 5
+         y_offset = y_offset + 3
 
       # -- Limit the frame rate to the specified frames per second (FPS) -- #
       clock.tick(config.FPS) # Use the clock to control the frame rate
